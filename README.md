@@ -56,13 +56,6 @@
 
 For more details, check out our [Architecture Overview](./docs/architecture-overview.md).
 
----
-
-## Screenshots
-
-| Home Page | AI Coach |
-|-----------|---------|
-| ![Home Page](https://user-images.githubusercontent.com/00000000/onni-home.png) | ![AI Coach](https://user-images.githubusercontent.com/00000000/onni-ai.png) |
 
 ---
 
