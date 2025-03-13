@@ -16,3 +16,9 @@ Onni is a memecoin-focused paper trading platform that helps users practice trad
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/yourusername/onni.git
+cd onni
+yarn install
+cd backend
+yarn start
+cd ../frontend
+yarn dev
