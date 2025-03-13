@@ -1,0 +1,28 @@
+import { NextPage } from 'next'
+import Head from 'next/head'
+import Navbar from '../../src/components/Navbar'
+import Footer from '../../src/components/Footer'
+import AIWidget from '../../src/components/AIWidget'
+
+const AICoach: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>Onni - AI Personal Coach</title>
+        <meta name="description" content="Get personalized trading insights with our AI coach feature." />
+      </Head>
+      <Navbar />
+      <main style={{ padding: '2rem' }}>
+        <h2>AI Personal Coach</h2>
+        <p>
+          Our AI helps you spot trends, manage risk, and develop winning strategies
+          tailored to your trading style.
+        </p>
+        <AIWidget />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export default AICoach
