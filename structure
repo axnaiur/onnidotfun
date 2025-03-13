@@ -1,0 +1,131 @@
+onni
+├── .github
+│   ├── ISSUE_TEMPLATE.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows
+│       ├── build.yml
+│       └── test.yml
+├── LICENSE
+├── README.md
+├── package.json
+├── yarn.lock
+├── frontend
+│   ├── next.config.js
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── pages
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── index.tsx
+│   │   ├── about
+│   │   │   ├── index.tsx
+│   │   │   ├── story.tsx
+│   │   │   └── team.tsx
+│   │   ├── features
+│   │   │   ├── ai-coach.tsx
+│   │   │   ├── funded-challenge.tsx
+│   │   │   ├── memecoin-trading.tsx
+│   │   │   └── ...
+│   │   ├── faq
+│   │   │   ├── general.tsx
+│   │   │   ├── security.tsx
+│   │   │   └── ...
+│   │   ├── docs
+│   │   │   ├── privacy-policy.tsx
+│   │   │   ├── terms-and-conditions.tsx
+│   │   │   └── ...
+│   │   ├── dashboard
+│   │   │   ├── index.tsx
+│   │   │   ├── trades.tsx
+│   │   │   ├── analytics.tsx
+│   │   │   ├── settings.tsx
+│   │   │   └── ...
+│   │   ├── challenge
+│   │   │   ├── index.tsx
+│   │   │   ├── rules.tsx
+│   │   │   └── leaderboard.tsx
+│   │   ├── community
+│   │   │   ├── index.tsx
+│   │   │   ├── forums.tsx
+│   │   │   └── ...
+│   │   ├── register.tsx
+│   │   ├── login.tsx
+│   │   ├── ...
+│   ├── public
+│   │   ├── images
+│   │   │   └── onni-logo.png
+│   │   ├── favicons
+│   │   │   ├── favicon.ico
+│   │   │   └── ...
+│   │   └── ...
+│   ├── styles
+│   │   ├── globals.css
+│   │   └── components
+│   │       ├── navbar.module.css
+│   │       └── ...
+│   └── src
+│       ├── components
+│       │   ├── Navbar.tsx
+│       │   ├── Footer.tsx
+│       │   ├── TradingChart.tsx
+│       │   ├── AIWidget.tsx
+│       │   └── ...
+│       └── utils
+│           ├── api.ts
+│           └── helpers.ts
+├── backend
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── src
+│   │   ├── app.ts
+│   │   ├── server.ts
+│   │   ├── config
+│   │   │   ├── db.ts
+│   │   │   └── env.ts
+│   │   ├── controllers
+│   │   │   ├── authController.ts
+│   │   │   ├── userController.ts
+│   │   │   ├── tradeController.ts
+│   │   │   └── challengeController.ts
+│   │   ├── models
+│   │   │   ├── User.ts
+│   │   │   ├── Trade.ts
+│   │   │   ├── Challenge.ts
+│   │   │   └── ...
+│   │   ├── routes
+│   │   │   ├── authRoutes.ts
+│   │   │   ├── userRoutes.ts
+│   │   │   ├── tradeRoutes.ts
+│   │   │   └── challengeRoutes.ts
+│   │   └── services
+│   │       ├── aiCoachService.ts
+│   │       ├── tradeService.ts
+│   │       ├── challengeService.ts
+│   │       └── ...
+│   └── tests
+│       ├── auth.test.ts
+│       ├── user.test.ts
+│       ├── trade.test.ts
+│       └── challenge.test.ts
+├── docs
+│   ├── architecture-overview.md
+│   ├── api-reference.md
+│   ├── dev-setup.md
+│   ├── user-guide
+│   │   ├── getting-started.md
+│   │   ├── advanced-trading.md
+│   │   └── ai-coach-tips.md
+│   └── ...
+├── scripts
+│   ├── deploy.sh
+│   ├── build-frontend.sh
+│   ├── build-backend.sh
+│   └── ...
+└── tests
+    ├── e2e
+    │   ├── basic-e2e.spec.ts
+    │   └── ...
+    ├── integration
+    │   ├── challenge-integration.spec.ts
+    │   └── ...
+    └── ...
