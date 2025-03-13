@@ -1,19 +1,5 @@
 ![onnipfp-removebg-preview](https://github.com/user-attachments/assets/650a6bcb-1142-47c5-bf00-2bf8bfcbf6d2)
 
-
-<p align="center">
-  <a href="https://github.com/yourusername/onni/actions">
-    <img src="https://img.shields.io/github/workflow/status/yourusername/onni/Build%20&%20Test?style=flat-square" alt="Build Status">
-  </a>
-  <a href="https://github.com/yourusername/onni/issues">
-    <img src="https://img.shields.io/github/issues/yourusername/onni?style=flat-square" alt="Open Issues">
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License">
-  </a>
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
-</p>
-
 <br />
 
 <div align="center">
@@ -61,4 +47,39 @@
 ---
 
 ## Architecture
+
+
+- **Frontend**: Renders the UI, communicates with backend services via REST/GraphQL.  
+- **Backend**: Manages authentication, user data, trade logic, challenge states.  
+- **Microservices**: Handles notifications, analytics, or specialized tasks for performance and scalability.  
+- **Infrastructure**: Scripts and configs for CI/CD, containerization, and cloud deployment.
+
+For more details, check out our [Architecture Overview](./docs/architecture-overview.md).
+
+---
+
+## Screenshots
+
+| Home Page | AI Coach |
+|-----------|---------|
+| ![Home Page](https://user-images.githubusercontent.com/00000000/onni-home.png) | ![AI Coach](https://user-images.githubusercontent.com/00000000/onni-ai.png) |
+
+---
+
+## Installation
+
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/yourusername/onni.git
+   cd onni
+yarn install
+# or
+npm install
+
+cd frontend
+yarn dev
+
+cd backend
+yarn start
+
 
