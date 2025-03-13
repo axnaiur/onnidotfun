@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile.frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile.backend
+    ports:
+      - "4000:4000"
+    environment:
+      - DB_URL=mongodb://mongo:27017/onni
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:5.0
+    container_name: onni_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
