@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'onni-backend'
+    static_configs:
+      - targets: ['onni-backend:4000']
+
+  - job_name: 'onni-frontend'
+    static_configs:
+      - targets: ['onni-frontend:80']
