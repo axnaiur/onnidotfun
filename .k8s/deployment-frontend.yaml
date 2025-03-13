@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: onni-frontend-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: onni-frontend
+  template:
+    metadata:
+      labels:
+        app: onni-frontend
+    spec:
+      containers:
+      - name: onni-frontend
+        image: onni/frontend:latest
+        ports:
+        - containerPort: 80
