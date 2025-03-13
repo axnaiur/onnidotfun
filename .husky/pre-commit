@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running lint and prettier checks..."
+yarn lint
+yarn prettier --check .
