@@ -1,0 +1,13 @@
+onni
+└── microservices
+    └── ai-coach-service
+        ├── app.py
+        ├── requirements.txt
+        ├── Dockerfile
+        ├── src
+        │   ├── model_inference.py
+        │   ├── training_pipeline.py
+        │   └── data_preprocessor.py
+        └── tests
+            ├── test_inference.py
+            └── test_pipeline.py
